@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         String url = API_BASE_URL + "/movie/now_playing";
         // set the request parameters
         RequestParams params = new RequestParams();
-        params.put(API_KEY_PARAM, getString(R.string.api_key)); // the API Key is always required
+        params.put(API_KEY_PARAM, getString(R.string.movie_api_key)); // the API Key is always required
         // execute a GET request expecting a JSON object response
         client.get(url, params, new JsonHttpResponseHandler() {
             @Override
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         String url = API_BASE_URL + "/configuration";
         // set the request parameters
         RequestParams params = new RequestParams();
-        params.put(API_KEY_PARAM, getString(R.string.api_key)); // the API Key is always required
+        params.put(API_KEY_PARAM, getString(R.string.movie_api_key)); // the API Key is always required
         // execute a GET request expecting a JSON object response
         client.get(url, params, new JsonHttpResponseHandler() {
             @Override
